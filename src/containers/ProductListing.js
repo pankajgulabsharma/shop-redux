@@ -23,7 +23,7 @@ const ProductListing = () => {
   // calling that function to get data of API
   useEffect(() => {
     fetchProducts();
-    console.log("useEffect");
+    // console.log("useEffect");
   }, []);
 
   return (
