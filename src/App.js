@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProductListing from "./containers/ProductListing";
-import Header from "./containers/Header";
+import ProductListing from "./components/ProductListing";
+import Header from "./components/Header";
 import "./App.css";
-import ProductDetails from "./containers/ProductDetails";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (

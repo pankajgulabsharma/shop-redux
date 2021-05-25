@@ -1,8 +1,9 @@
 import { ActionTypes } from "../constants/action-types";
-
-export const setproducts = (products) => {
+//1
+export const setProducts = (products) => {
+  //   console.log(products);
   return {
-    type: ActionTypes.SET_PRODUCTS,
+    type: ActionTypes.SET_PRODUCT_REQUESTED,
     payload: products,
   };
 };
