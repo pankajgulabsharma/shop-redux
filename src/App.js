@@ -4,6 +4,7 @@ import ProductListing from "./components/ProductListing";
 import Header from "./components/Header";
 import "./App.css";
 import ProductDetails from "./components/ProductDetails";
+import ErrorPage from "./ErrorPage";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={ProductListing} />
-          <Route path="/product/:productId" component={ProductDetails} />
-          <Route>404 Not Found!</Route>
+          <Route path="/product/:productId" exact component={ProductDetails} />
+          <Route component={ErrorPage} />
         </Switch>
       </Router>
     </div>
